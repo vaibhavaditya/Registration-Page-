@@ -10,6 +10,9 @@ app.use(cors({
 
 app.use(express.json())
 
+app.get('/',(req,res)=>{
+    res.send('Hello World!')
+})
 
 import userRoutes from './routes/user.route.js'
 import scrapedRoutes from './routes/scrape.route.js'    
