@@ -11,7 +11,6 @@ const registrationDetails = asyncHandler(async (req, res) => {
 
     await page.waitForSelector("#ctl00_ContentPlaceHolder1_txtadharno");
 
-    // Extract Step 1 form elements
     const step1Elements = await page.evaluate(() => {
         const selectors = [
             "#ctl00_ContentPlaceHolder1_txtadharno",
